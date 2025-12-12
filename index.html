@@ -1,0 +1,1050 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2867
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Italic;}
+{\colortbl;\red255\green255\blue255;\red42\green44\blue51;\red247\green249\blue250;\red13\green14\blue17;
+\red219\green63\blue57;\red167\green87\blue5;\red66\green147\blue62;\red143\green144\blue150;}
+{\*\expandedcolortbl;;\cssrgb\c21961\c22745\c25882;\cssrgb\c97647\c98039\c98431;\cssrgb\c5882\c6667\c8235;
+\cssrgb\c89412\c33725\c28627;\cssrgb\c71765\c41961\c392;\cssrgb\c31373\c63137\c30980;\cssrgb\c62745\c63137\c65490;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww44600\viewh23140\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs26 \cf2 \cb3 \expnd0\expndtw0\kerning0
+<!DOCTYPE html>\cf4 \
+\cf2 <\cf5 html \cf6 lang\cf2 =\cf7 "es"\cf2 >\cf4 \
+\cf2 <\cf5 head\cf2 >\cf4 \
+    \cf2 <\cf5 meta \cf6 charset\cf2 =\cf7 "UTF-8"\cf2 >\cf4 \
+    \cf2 <\cf5 meta \cf6 name\cf2 =\cf7 "viewport"\cf5  \cf6 content\cf2 =\cf7 "width=device-width, initial-scale=1.0"\cf2 >\cf4 \
+    \cf2 <\cf5 title\cf2 >\cf4 Viajar sin maletas - Env\'edos de equipaje y otros enseres\cf2 </\cf5 title\cf2 >\cf4 \
+    \cf2 <\cf5 link \cf6 rel\cf2 =\cf7 "stylesheet"\cf5  \cf6 href\cf2 =\cf7 "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"\cf2 >\cf4 \
+    \cf2 <\cf5 link \cf6 href\cf2 =\cf7 "https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap"\cf5  \cf6 rel\cf2 =\cf7 "stylesheet"\cf2 >\cf4 \
+    \cf2 <\cf5 style\cf2 >\cf4 \
+        :root \{\
+            --primary: #0a2c5e;\
+            --secondary: #d4af37;\
+            --light: #f8f9fa;\
+            --dark: #343a40;\
+            --gray: #6c757d;\
+            --light-gray: #e9ecef;\
+            --success: #28a745;\
+            --border-radius: 8px;\
+            --box-shadow: 0 5px 15px rgba(0,0,0,0.08);\
+            --transition: all 0.3s ease;\
+        \}\
+\
+        * \{\
+            margin: 0;\
+            padding: 0;\
+            box-sizing: border-box;\
+        \}\
+\
+        body \{\
+            font-family: 'Montserrat', sans-serif;\
+            color: var(--dark);\
+            background-color: #f5f7fa;\
+            line-height: 1.6;\
+        \}\
+\
+        .container \{\
+            max-width: 1200px;\
+            margin: 0 auto;\
+            padding: 0 20px;\
+        \}\
+\
+        /* Header Styles */\
+        header \{\
+            background: linear-gradient(135deg, var(--primary) 0%, #1a4393 100%);\
+            color: white;\
+            padding: 20px 0;\
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);\
+            position: sticky;\
+            top: 0;\
+            z-index: 1000;\
+        \}\
+\
+        .header-content \{\
+            display: flex;\
+            justify-content: space-between;\
+            align-items: center;\
+        \}\
+\
+        .logo \{\
+            display: flex;\
+            align-items: center;\
+            gap: 15px;\
+            text-decoration: none;\
+            color: white;\
+        \}\
+\
+        .logo-icon \{\
+            font-size: 2.5rem;\
+            color: var(--secondary);\
+        \}\
+\
+        .logo-text \{\
+            font-family: 'Playfair Display', serif;\
+            font-size: 1.8rem;\
+            font-weight: 600;\
+        \}\
+\
+        .logo-subtitle \{\
+            font-size: 0.9rem;\
+            opacity: 0.9;\
+            margin-top: 3px;\
+            display: block;\
+        \}\
+\
+        .nav-menu \{\
+            display: flex;\
+            gap: 30px;\
+        \}\
+\
+        .nav-menu a \{\
+            color: white;\
+            text-decoration: none;\
+            font-weight: 500;\
+            transition: var(--transition);\
+            padding: 5px 0;\
+            position: relative;\
+        \}\
+\
+        .nav-menu a:hover \{\
+            color: var(--secondary);\
+        \}\
+\
+        .nav-menu a.active \{\
+            color: var(--secondary);\
+        \}\
+\
+        .nav-menu a.active:after \{\
+            content: '';\
+            position: absolute;\
+            bottom: -5px;\
+            left: 0;\
+            width: 100%;\
+            height: 2px;\
+            background-color: var(--secondary);\
+        \}\
+\
+        .mobile-menu-btn \{\
+            display: none;\
+            background: none;\
+            border: none;\
+            color: white;\
+            font-size: 1.5rem;\
+            cursor: pointer;\
+        \}\
+\
+        /* Hero Section */\
+        .hero \{\
+            background: linear-gradient(rgba(10, 44, 94, 0.85), rgba(10, 44, 94, 0.9)), url('https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');\
+            background-size: cover;\
+            background-position: center;\
+            color: white;\
+            padding: 100px 0;\
+            text-align: center;\
+        \}\
+\
+        .hero h1 \{\
+            font-family: 'Playfair Display', serif;\
+            font-size: 3.2rem;\
+            margin-bottom: 20px;\
+            line-height: 1.2;\
+        \}\
+\
+        .hero p \{\
+            font-size: 1.2rem;\
+            max-width: 700px;\
+            margin: 0 auto 40px;\
+            opacity: 0.9;\
+        \}\
+\
+        .hero-buttons \{\
+            display: flex;\
+            gap: 20px;\
+            justify-content: center;\
+            margin-top: 30px;\
+        \}\
+\
+        .btn \{\
+            padding: 15px 30px;\
+            border-radius: var(--border-radius);\
+            font-weight: 600;\
+            text-decoration: none;\
+            display: inline-block;\
+            transition: var(--transition);\
+            cursor: pointer;\
+            border: none;\
+            font-family: 'Montserrat', sans-serif;\
+            font-size: 1rem;\
+        \}\
+\
+        .btn-primary \{\
+            background-color: var(--secondary);\
+            color: var(--primary);\
+        \}\
+\
+        .btn-primary:hover \{\
+            background-color: #e6c12e;\
+            transform: translateY(-3px);\
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);\
+        \}\
+\
+        .btn-secondary \{\
+            background-color: transparent;\
+            color: white;\
+            border: 2px solid white;\
+        \}\
+\
+        .btn-secondary:hover \{\
+            background-color: white;\
+            color: var(--primary);\
+            transform: translateY(-3px);\
+        \}\
+\
+        /* Main Content */\
+        main \{\
+            padding: 80px 0;\
+        \}\
+\
+        .section-title \{\
+            text-align: center;\
+            margin-bottom: 50px;\
+            color: var(--primary);\
+            font-family: 'Playfair Display', serif;\
+            font-size: 2.2rem;\
+            position: relative;\
+            padding-bottom: 15px;\
+        \}\
+\
+        .section-title:after \{\
+            content: '';\
+            position: absolute;\
+            bottom: 0;\
+            left: 50%;\
+            transform: translateX(-50%);\
+            width: 80px;\
+            height: 3px;\
+            background-color: var(--secondary);\
+        \}\
+\
+        /* Calculator Styles */\
+        .calculator-container \{\
+            display: grid;\
+            grid-template-columns: 1fr 1fr;\
+            gap: 40px;\
+            margin-bottom: 50px;\
+        \}\
+\
+        @media (max-width: 992px) \{\
+            .calculator-container \{\
+                grid-template-columns: 1fr;\
+            \}\
+        \}\
+\
+        .form-section, .results-section \{\
+            background-color: white;\
+            border-radius: var(--border-radius);\
+            padding: 30px;\
+            box-shadow: var(--box-shadow);\
+        \}\
+\
+        .form-title \{\
+            font-size: 1.4rem;\
+            margin-bottom: 25px;\
+            color: var(--primary);\
+            display: flex;\
+            align-items: center;\
+            gap: 10px;\
+        \}\
+\
+        .form-title i \{\
+            color: var(--secondary);\
+        \}\
+\
+        .form-group \{\
+            margin-bottom: 25px;\
+        \}\
+\
+        .form-label \{\
+            display: block;\
+            margin-bottom: 8px;\
+            font-weight: 500;\
+            color: var(--dark);\
+        \}\
+\
+        .form-input, .form-select \{\
+            width: 100%;\
+            padding: 14px 16px;\
+            border: 1px solid var(--light-gray);\
+            border-radius: var(--border-radius);\
+            font-family: 'Montserrat', sans-serif;\
+            font-size: 1rem;\
+            transition: var(--transition);\
+        \}\
+\
+        .form-input:focus, .form-select:focus \{\
+            outline: none;\
+            border-color: var(--primary);\
+            box-shadow: 0 0 0 3px rgba(10, 44, 94, 0.1);\
+        \}\
+\
+        .dimensions-container \{\
+            display: grid;\
+            grid-template-columns: repeat(3, 1fr);\
+            gap: 15px;\
+        \}\
+\
+        @media (max-width: 576px) \{\
+            .dimensions-container \{\
+                grid-template-columns: 1fr;\
+            \}\
+        \}\
+\
+        .dimension-input \{\
+            position: relative;\
+        \}\
+\
+        .dimension-input span \{\
+            position: absolute;\
+            right: 15px;\
+            top: 50%;\
+            transform: translateY(-50%);\
+            color: var(--gray);\
+        \}\
+\
+        .form-row \{\
+            display: grid;\
+            grid-template-columns: 1fr 1fr;\
+            gap: 20px;\
+        \}\
+\
+        @media (max-width: 576px) \{\
+            .form-row \{\
+                grid-template-columns: 1fr;\
+            \}\
+        \}\
+\
+        .calculate-btn \{\
+            background-color: var(--primary);\
+            color: white;\
+            border: none;\
+            padding: 16px 30px;\
+            border-radius: var(--border-radius);\
+            font-size: 1.1rem;\
+            font-weight: 600;\
+            cursor: pointer;\
+            transition: var(--transition);\
+            width: 100%;\
+            margin-top: 10px;\
+            display: flex;\
+            justify-content: center;\
+            align-items: center;\
+            gap: 10px;\
+        \}\
+\
+        .calculate-btn:hover \{\
+            background-color: #0c387a;\
+            transform: translateY(-2px);\
+            box-shadow: 0 7px 14px rgba(10, 44, 94, 0.2);\
+        \}\
+\
+        .results-display \{\
+            background-color: var(--light);\
+            border-radius: var(--border-radius);\
+            padding: 25px;\
+            margin-top: 20px;\
+        \}\
+\
+        .result-item \{\
+            display: flex;\
+            justify-content: space-between;\
+            padding: 15px 0;\
+            border-bottom: 1px solid rgba(0,0,0,0.08);\
+        \}\
+\
+        .result-item:last-child \{\
+            border-bottom: none;\
+        \}\
+\
+        .result-label \{\
+            font-weight: 500;\
+        \}\
+\
+        .result-value \{\
+            font-weight: 600;\
+            color: var(--primary);\
+        \}\
+\
+        .volumetric-weight \{\
+            color: var(--success);\
+            font-weight: 700;\
+        \}\
+\
+        .important-note \{\
+            background-color: #fff8e1;\
+            border-left: 4px solid var(--secondary);\
+            padding: 15px;\
+            margin-top: 25px;\
+            border-radius: 0 var(--border-radius) var(--border-radius) 0;\
+        \}\
+\
+        .important-note p \{\
+            font-size: 0.95rem;\
+            margin-bottom: 0;\
+        \}\
+\
+        /* Services Section */\
+        .services \{\
+            padding: 80px 0;\
+            background-color: white;\
+        \}\
+\
+        .services-container \{\
+            display: grid;\
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));\
+            gap: 30px;\
+            margin-top: 50px;\
+        \}\
+\
+        .service-card \{\
+            background-color: var(--light);\
+            border-radius: var(--border-radius);\
+            padding: 30px;\
+            text-align: center;\
+            transition: var(--transition);\
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);\
+        \}\
+\
+        .service-card:hover \{\
+            transform: translateY(-10px);\
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);\
+        \}\
+\
+        .service-icon \{\
+            width: 70px;\
+            height: 70px;\
+            background-color: rgba(10, 44, 94, 0.1);\
+            border-radius: 50%;\
+            display: flex;\
+            align-items: center;\
+            justify-content: center;\
+            margin: 0 auto 20px;\
+            font-size: 1.8rem;\
+            color: var(--primary);\
+        \}\
+\
+        .service-card h3 \{\
+            font-size: 1.4rem;\
+            margin-bottom: 15px;\
+            color: var(--primary);\
+        \}\
+\
+        /* How It Works Section */\
+        .instructions \{\
+            padding: 80px 0;\
+        \}\
+\
+        .instructions-list \{\
+            display: grid;\
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));\
+            gap: 30px;\
+            margin-top: 50px;\
+        \}\
+\
+        .instruction-item \{\
+            display: flex;\
+            align-items: flex-start;\
+            gap: 20px;\
+        \}\
+\
+        .instruction-number \{\
+            background-color: var(--primary);\
+            color: white;\
+            width: 50px;\
+            height: 50px;\
+            border-radius: 50%;\
+            display: flex;\
+            align-items: center;\
+            justify-content: center;\
+            flex-shrink: 0;\
+            font-size: 1.3rem;\
+            font-weight: 700;\
+        \}\
+\
+        .instruction-content h3 \{\
+            font-size: 1.2rem;\
+            margin-bottom: 10px;\
+            color: var(--primary);\
+        \}\
+\
+        /* Footer */\
+        footer \{\
+            background-color: var(--primary);\
+            color: white;\
+            padding: 60px 0 20px;\
+        \}\
+\
+        .footer-content \{\
+            display: grid;\
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));\
+            gap: 40px;\
+            margin-bottom: 40px;\
+        \}\
+\
+        .footer-column h3 \{\
+            font-size: 1.3rem;\
+            margin-bottom: 20px;\
+            color: var(--secondary);\
+            position: relative;\
+            padding-bottom: 10px;\
+        \}\
+\
+        .footer-column h3:after \{\
+            content: '';\
+            position: absolute;\
+            bottom: 0;\
+            left: 0;\
+            width: 40px;\
+            height: 2px;\
+            background-color: rgba(212, 175, 55, 0.5);\
+        \}\
+\
+        .footer-column ul \{\
+            list-style: none;\
+        \}\
+\
+        .footer-column ul li \{\
+            margin-bottom: 12px;\
+        \}\
+\
+        .footer-column ul li a \{\
+            color: rgba(255,255,255,0.8);\
+            text-decoration: none;\
+            transition: var(--transition);\
+        \}\
+\
+        .footer-column ul li a:hover \{\
+            color: var(--secondary);\
+            padding-left: 5px;\
+        \}\
+\
+        .contact-info \{\
+            display: flex;\
+            align-items: center;\
+            gap: 12px;\
+            margin-bottom: 12px;\
+        \}\
+\
+        .social-icons \{\
+            display: flex;\
+            gap: 15px;\
+            margin-top: 20px;\
+        \}\
+\
+        .social-icons a \{\
+            display: flex;\
+            align-items: center;\
+            justify-content: center;\
+            width: 40px;\
+            height: 40px;\
+            background-color: rgba(255,255,255,0.1);\
+            border-radius: 50%;\
+            color: white;\
+            text-decoration: none;\
+            transition: var(--transition);\
+        \}\
+\
+        .social-icons a:hover \{\
+            background-color: var(--secondary);\
+            color: var(--primary);\
+            transform: translateY(-3px);\
+        \}\
+\
+        .copyright \{\
+            text-align: center;\
+            padding-top: 30px;\
+            border-top: 1px solid rgba(255,255,255,0.1);\
+            font-size: 0.9rem;\
+            color: rgba(255,255,255,0.7);\
+        \}\
+\
+        /* Utility Classes */\
+        .hidden \{\
+            display: none;\
+        \}\
+\
+        .volumetric-formula \{\
+            font-size: 0.85rem;\
+            color: var(--gray);\
+            margin-top: 10px;\
+            font-style: italic;\
+            text-align: center;\
+        \}\
+\
+        .text-center \{\
+            text-align: center;\
+        \}\
+\
+        .mb-30 \{\
+            margin-bottom: 30px;\
+        \}\
+\
+        /* Responsive Design */\
+        @media (max-width: 992px) \{\
+            .hero h1 \{\
+                font-size: 2.5rem;\
+            \}\
+            \
+            .nav-menu \{\
+                display: none;\
+                position: absolute;\
+                top: 100%;\
+                left: 0;\
+                width: 100%;\
+                background-color: var(--primary);\
+                flex-direction: column;\
+                padding: 20px;\
+                box-shadow: 0 5px 10px rgba(0,0,0,0.1);\
+            \}\
+            \
+            .nav-menu.active \{\
+                display: flex;\
+            \}\
+            \
+            .mobile-menu-btn \{\
+                display: block;\
+            \}\
+            \
+            .hero-buttons \{\
+                flex-direction: column;\
+                align-items: center;\
+            \}\
+            \
+            .hero-buttons .btn \{\
+                width: 100%;\
+                max-width: 300px;\
+            \}\
+        \}\
+\
+        @media (max-width: 768px) \{\
+            .hero \{\
+                padding: 70px 0;\
+            \}\
+            \
+            .hero h1 \{\
+                font-size: 2rem;\
+            \}\
+            \
+            .hero p \{\
+                font-size: 1rem;\
+            \}\
+            \
+            .section-title \{\
+                font-size: 1.8rem;\
+            \}\
+        \}\
+    \cf2 </\cf5 style\cf2 >\cf4 \
+\cf2 </\cf5 head\cf2 >\cf4 \
+\cf2 <\cf5 body\cf2 >\cf4 \
+    
+\f1\i \cf8 <!-- Header -->
+\f0\i0 \cf4 \
+    \cf2 <\cf5 header\cf2 >\cf4 \
+        \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "container"\cf2 >\cf4 \
+            \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "header-content"\cf2 >\cf4 \
+                \cf2 <\cf5 a \cf6 href\cf2 =\cf7 "#"\cf5  \cf6 class\cf2 =\cf7 "logo"\cf2 >\cf4 \
+                    \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "logo-icon"\cf2 >\cf4 \
+                        \cf2 <\cf5 i \cf6 class\cf2 =\cf7 "fas fa-suitcase-rolling"\cf2 ></\cf5 i\cf2 >\cf4 \
+                    \cf2 </\cf5 div\cf2 >\cf4 \
+                    \cf2 <\cf5 div\cf2 >\cf4 \
+                        \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "logo-text"\cf2 >\cf4 Viajar sin maletas\cf2 </\cf5 div\cf2 >\cf4 \
+                        \cf2 <\cf5 span \cf6 class\cf2 =\cf7 "logo-subtitle"\cf2 >\cf4 Env\'edos de equipaje y otros enseres\cf2 </\cf5 span\cf2 >\cf4 \
+                    \cf2 </\cf5 div\cf2 >\cf4 \
+                \cf2 </\cf5 a\cf2 >\cf4 \
+                \
+                \cf2 <\cf5 nav\cf2 >\cf4 \
+                    \cf2 <\cf5 button \cf6 class\cf2 =\cf7 "mobile-menu-btn"\cf5  \cf6 id\cf2 =\cf7 "mobileMenuBtn"\cf2 >\cf4 \
+                        \cf2 <\cf5 i \cf6 class\cf2 =\cf7 "fas fa-bars"\cf2 ></\cf5 i\cf2 >\cf4 \
+                    \cf2 </\cf5 button\cf2 >\cf4 \
+                    \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "nav-menu"\cf5  \cf6 id\cf2 =\cf7 "navMenu"\cf2 >\cf4 \
+                        \cf2 <\cf5 a \cf6 href\cf2 =\cf7 "#"\cf5  \cf6 class\cf2 =\cf7 "active"\cf2 >\cf4 Inicio\cf2 </\cf5 a\cf2 >\cf4 \
+                        \cf2 <\cf5 a \cf6 href\cf2 =\cf7 "#calculator"\cf2 >\cf4 Calculadora\cf2 </\cf5 a\cf2 >\cf4 \
+                        \cf2 <\cf5 a \cf6 href\cf2 =\cf7 "#services"\cf2 >\cf4 Servicios\cf2 </\cf5 a\cf2 >\cf4 \
+                        \cf2 <\cf5 a \cf6 href\cf2 =\cf7 "#how-it-works"\cf2 >\cf4 C\'f3mo funciona\cf2 </\cf5 a\cf2 >\cf4 \
+                        \cf2 <\cf5 a \cf6 href\cf2 =\cf7 "#contact"\cf2 >\cf4 Contacto\cf2 </\cf5 a\cf2 >\cf4 \
+                    \cf2 </\cf5 div\cf2 >\cf4 \
+                \cf2 </\cf5 nav\cf2 >\cf4 \
+            \cf2 </\cf5 div\cf2 >\cf4 \
+        \cf2 </\cf5 div\cf2 >\cf4 \
+    \cf2 </\cf5 header\cf2 >\cf4 \
+\
+    
+\f1\i \cf8 <!-- Hero Section -->
+\f0\i0 \cf4 \
+    \cf2 <\cf5 section \cf6 class\cf2 =\cf7 "hero"\cf2 >\cf4 \
+        \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "container"\cf2 >\cf4 \
+            \cf2 <\cf5 h1\cf2 >\cf4 Tu equipaje, nuestra responsabilidad\cf2 </\cf5 h1\cf2 >\cf4 \
+            \cf2 <\cf5 p\cf2 >\cf4 Llevamos lo que necesitas donde lo necesitas. Servicio de env\'edo de maletas y otros enseres a nivel nacional e internacional con la m\'e1xima seguridad y confianza.\cf2 </\cf5 p\cf2 >\cf4 \
+            \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "hero-buttons"\cf2 >\cf4 \
+                \cf2 <\cf5 a \cf6 href\cf2 =\cf7 "#calculator"\cf5  \cf6 class\cf2 =\cf7 "btn btn-primary"\cf2 >\cf4 Calcular env\'edo\cf2 </\cf5 a\cf2 >\cf4 \
+                \cf2 <\cf5 a \cf6 href\cf2 =\cf7 "#contact"\cf5  \cf6 class\cf2 =\cf7 "btn btn-secondary"\cf2 >\cf4 Contactar\cf2 </\cf5 a\cf2 >\cf4 \
+            \cf2 </\cf5 div\cf2 >\cf4 \
+        \cf2 </\cf5 div\cf2 >\cf4 \
+    \cf2 </\cf5 section\cf2 >\cf4 \
+\
+    
+\f1\i \cf8 <!-- Main Content -->
+\f0\i0 \cf4 \
+    \cf2 <\cf5 main \cf6 class\cf2 =\cf7 "container"\cf2 >\cf4 \
+        
+\f1\i \cf8 <!-- Calculator Section -->
+\f0\i0 \cf4 \
+        \cf2 <\cf5 section \cf6 id\cf2 =\cf7 "calculator"\cf2 >\cf4 \
+            \cf2 <\cf5 h2 \cf6 class\cf2 =\cf7 "section-title"\cf2 >\cf4 Calcula el costo de tu env\'edo\cf2 </\cf5 h2\cf2 >\cf4 \
+            \
+            \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "calculator-container"\cf2 >\cf4 \
+                \cf2 <\cf5 section \cf6 class\cf2 =\cf7 "form-section"\cf2 >\cf4 \
+                    \cf2 <\cf5 h3 \cf6 class\cf2 =\cf7 "form-title"\cf2 ><\cf5 i \cf6 class\cf2 =\cf7 "fas fa-calculator"\cf2 ></\cf5 i\cf2 >\cf4  Datos del env\'edo\cf2 </\cf5 h3\cf2 >\cf4 \
+                    \
+                    \cf2 <\cf5 form \cf6 id\cf2 =\cf7 "shippingCalculator"\cf2 >\cf4 \
+                        \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "form-group"\cf2 >\cf4 \
+                            \cf2 <\cf5 label \cf6 for\cf2 =\cf7 "parcels"\cf5  \cf6 class\cf2 =\cf7 "form-label"\cf2 >\cf4 N\'famero de bultos\cf2 </\cf5 label\cf2 >\cf4 \
+                            \cf2 <\cf5 input \cf6 type\cf2 =\cf7 "number"\cf5  \cf6 id\cf2 =\cf7 "parcels"\cf5  \cf6 class\cf2 =\cf7 "form-input"\cf5  \cf6 min\cf2 =\cf7 "1"\cf5  \cf6 max\cf2 =\cf7 "10"\cf5  \cf6 value\cf2 =\cf7 "1"\cf5  \cf6 required\cf2 >\cf4 \
+                        \cf2 </\cf5 div\cf2 >\cf4 \
+                        \
+                        \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "form-group"\cf2 >\cf4 \
+                            \cf2 <\cf5 label \cf6 class\cf2 =\cf7 "form-label"\cf2 >\cf4 Medidas en cent\'edmetros (alto \'d7 ancho \'d7 largo)\cf2 </\cf5 label\cf2 >\cf4 \
+                            \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "dimensions-container"\cf2 >\cf4 \
+                                \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "dimension-input"\cf2 >\cf4 \
+                                    \cf2 <\cf5 input \cf6 type\cf2 =\cf7 "number"\cf5  \cf6 id\cf2 =\cf7 "height"\cf5  \cf6 class\cf2 =\cf7 "form-input"\cf5  \cf6 placeholder\cf2 =\cf7 "Alto"\cf5  \cf6 min\cf2 =\cf7 "1"\cf5  \cf6 required\cf2 >\cf4 \
+                                    \cf2 <\cf5 span\cf2 >\cf4 cm\cf2 </\cf5 span\cf2 >\cf4 \
+                                \cf2 </\cf5 div\cf2 >\cf4 \
+                                \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "dimension-input"\cf2 >\cf4 \
+                                    \cf2 <\cf5 input \cf6 type\cf2 =\cf7 "number"\cf5  \cf6 id\cf2 =\cf7 "width"\cf5  \cf6 class\cf2 =\cf7 "form-input"\cf5  \cf6 placeholder\cf2 =\cf7 "Ancho"\cf5  \cf6 min\cf2 =\cf7 "1"\cf5  \cf6 required\cf2 >\cf4 \
+                                    \cf2 <\cf5 span\cf2 >\cf4 cm\cf2 </\cf5 span\cf2 >\cf4 \
+                                \cf2 </\cf5 div\cf2 >\cf4 \
+                                \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "dimension-input"\cf2 >\cf4 \
+                                    \cf2 <\cf5 input \cf6 type\cf2 =\cf7 "number"\cf5  \cf6 id\cf2 =\cf7 "length"\cf5  \cf6 class\cf2 =\cf7 "form-input"\cf5  \cf6 placeholder\cf2 =\cf7 "Largo"\cf5  \cf6 min\cf2 =\cf7 "1"\cf5  \cf6 required\cf2 >\cf4 \
+                                    \cf2 <\cf5 span\cf2 >\cf4 cm\cf2 </\cf5 span\cf2 >\cf4 \
+                                \cf2 </\cf5 div\cf2 >\cf4 \
+                            \cf2 </\cf5 div\cf2 >\cf4 \
+                        \cf2 </\cf5 div\cf2 >\cf4 \
+                        \
+                        \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "form-group"\cf2 >\cf4 \
+                            \cf2 <\cf5 label \cf6 for\cf2 =\cf7 "weight"\cf5  \cf6 class\cf2 =\cf7 "form-label"\cf2 >\cf4 Peso f\'edsico (kg)\cf2 </\cf5 label\cf2 >\cf4 \
+                            \cf2 <\cf5 input \cf6 type\cf2 =\cf7 "number"\cf5  \cf6 id\cf2 =\cf7 "weight"\cf5  \cf6 class\cf2 =\cf7 "form-input"\cf5  \cf6 min\cf2 =\cf7 "0.1"\cf5  \cf6 step\cf2 =\cf7 "0.1"\cf5  \cf6 placeholder\cf2 =\cf7 "Ej. 5.2"\cf5  \cf6 required\cf2 >\cf4 \
+                        \cf2 </\cf5 div\cf2 >\cf4 \
+                        \
+                        \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "form-row"\cf2 >\cf4 \
+                            \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "form-group"\cf2 >\cf4 \
+                                \cf2 <\cf5 label \cf6 for\cf2 =\cf7 "origin"\cf5  \cf6 class\cf2 =\cf7 "form-label"\cf2 >\cf4 Lugar de origen\cf2 </\cf5 label\cf2 >\cf4 \
+                                \cf2 <\cf5 select \cf6 id\cf2 =\cf7 "origin"\cf5  \cf6 class\cf2 =\cf7 "form-select"\cf5  \cf6 required\cf2 >\cf4 \
+                                    \cf2 <\cf5 option \cf6 value\cf2 =\cf7 ""\cf2 >\cf4 Seleccione origen\cf2 </\cf5 option\cf2 >\cf4 \
+                                    \cf2 <\cf5 option \cf6 value\cf2 =\cf7 "madrid"\cf2 >\cf4 Madrid\cf2 </\cf5 option\cf2 >\cf4 \
+                                    \cf2 <\cf5 option \cf6 value\cf2 =\cf7 "barcelona"\cf2 >\cf4 Barcelona\cf2 </\cf5 option\cf2 >\cf4 \
+                                    \cf2 <\cf5 option \cf6 value\cf2 =\cf7 "valencia"\cf2 >\cf4 Valencia\cf2 </\cf5 option\cf2 >\cf4 \
+                                    \cf2 <\cf5 option \cf6 value\cf2 =\cf7 "sevilla"\cf2 >\cf4 Sevilla\cf2 </\cf5 option\cf2 >\cf4 \
+                                    \cf2 <\cf5 option \cf6 value\cf2 =\cf7 "bilbao"\cf2 >\cf4 Bilbao\cf2 </\cf5 option\cf2 >\cf4 \
+                                    \cf2 <\cf5 option \cf6 value\cf2 =\cf7 "malaga"\cf2 >\cf4 M\'e1laga\cf2 </\cf5 option\cf2 >\cf4 \
+                                    \cf2 <\cf5 option \cf6 value\cf2 =\cf7 "zaragoza"\cf2 >\cf4 Zaragoza\cf2 </\cf5 option\cf2 >\cf4 \
+                                    \cf2 <\cf5 option \cf6 value\cf2 =\cf7 "palma"\cf2 >\cf4 Palma de Mallorca\cf2 </\cf5 option\cf2 >\cf4 \
+                                \cf2 </\cf5 select\cf2 >\cf4 \
+                            \cf2 </\cf5 div\cf2 >\cf4 \
+                            \
+                            \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "form-group"\cf2 >\cf4 \
+                                \cf2 <\cf5 label \cf6 for\cf2 =\cf7 "destination"\cf5  \cf6 class\cf2 =\cf7 "form-label"\cf2 >\cf4 Lugar de destino\cf2 </\cf5 label\cf2 >\cf4 \
+                                \cf2 <\cf5 select \cf6 id\cf2 =\cf7 "destination"\cf5  \cf6 class\cf2 =\cf7 "form-select"\cf5  \cf6 required\cf2 >\cf4 \
+                                    \cf2 <\cf5 option \cf6 value\cf2 =\cf7 ""\cf2 >\cf4 Seleccione destino\cf2 </\cf5 option\cf2 >\cf4 \
+                                    \cf2 <\cf5 option \cf6 value\cf2 =\cf7 "madrid"\cf2 >\cf4 Madrid\cf2 </\cf5 option\cf2 >\cf4 \
+                                    \cf2 <\cf5 option \cf6 value\cf2 =\cf7 "barcelona"\cf2 >\cf4 Barcelona\cf2 </\cf5 option\cf2 >\cf4 \
+                                    \cf2 <\cf5 option \cf6 value\cf2 =\cf7 "valencia"\cf2 >\cf4 Valencia\cf2 </\cf5 option\cf2 >\cf4 \
+                                    \cf2 <\cf5 option \cf6 value\cf2 =\cf7 "sevilla"\cf2 >\cf4 Sevilla\cf2 </\cf5 option\cf2 >\cf4 \
+                                    \cf2 <\cf5 option \cf6 value\cf2 =\cf7 "bilbao"\cf2 >\cf4 Bilbao\cf2 </\cf5 option\cf2 >\cf4 \
+                                    \cf2 <\cf5 option \cf6 value\cf2 =\cf7 "malaga"\cf2 >\cf4 M\'e1laga\cf2 </\cf5 option\cf2 >\cf4 \
+                                    \cf2 <\cf5 option \cf6 value\cf2 =\cf7 "zaragoza"\cf2 >\cf4 Zaragoza\cf2 </\cf5 option\cf2 >\cf4 \
+                                    \cf2 <\cf5 option \cf6 value\cf2 =\cf7 "palma"\cf2 >\cf4 Palma de Mallorca\cf2 </\cf5 option\cf2 >\cf4 \
+                                    \cf2 <\cf5 option \cf6 value\cf2 =\cf7 "paris"\cf2 >\cf4 Par\'eds (Francia)\cf2 </\cf5 option\cf2 >\cf4 \
+                                    \cf2 <\cf5 option \cf6 value\cf2 =\cf7 "london"\cf2 >\cf4 Londres (Reino Unido)\cf2 </\cf5 option\cf2 >\cf4 \
+                                    \cf2 <\cf5 option \cf6 value\cf2 =\cf7 "roma"\cf2 >\cf4 Roma (Italia)\cf2 </\cf5 option\cf2 >\cf4 \
+                                    \cf2 <\cf5 option \cf6 value\cf2 =\cf7 "berlin"\cf2 >\cf4 Berl\'edn (Alemania)\cf2 </\cf5 option\cf2 >\cf4 \
+                                \cf2 </\cf5 select\cf2 >\cf4 \
+                            \cf2 </\cf5 div\cf2 >\cf4 \
+                        \cf2 </\cf5 div\cf2 >\cf4 \
+                        \
+                        \cf2 <\cf5 button \cf6 type\cf2 =\cf7 "button"\cf5  \cf6 id\cf2 =\cf7 "calculateBtn"\cf5  \cf6 class\cf2 =\cf7 "calculate-btn"\cf2 >\cf4 \
+                            \cf2 <\cf5 i \cf6 class\cf2 =\cf7 "fas fa-calculator"\cf2 ></\cf5 i\cf2 >\cf4  Calcular costo de env\'edo\
+                        \cf2 </\cf5 button\cf2 >\cf4 \
+                    \cf2 </\cf5 form\cf2 >\cf4 \
+                    \
+                    \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "important-note"\cf2 >\cf4 \
+                        \cf2 <\cf5 p\cf2 ><\cf5 strong\cf2 >\cf4 Nota importante:\cf2 </\cf5 strong\cf2 >\cf4  El peso volum\'e9trico se calcula con la relaci\'f3n de 1 m\'b3 = 167 kg. Se aplicar\'e1 el mayor valor entre el peso f\'edsico y el peso volum\'e9trico para determinar el costo del env\'edo.\cf2 </\cf5 p\cf2 >\cf4 \
+                    \cf2 </\cf5 div\cf2 >\cf4 \
+                \cf2 </\cf5 section\cf2 >\cf4 \
+                \
+                \cf2 <\cf5 section \cf6 class\cf2 =\cf7 "results-section"\cf2 >\cf4 \
+                    \cf2 <\cf5 h3 \cf6 class\cf2 =\cf7 "form-title"\cf2 ><\cf5 i \cf6 class\cf2 =\cf7 "fas fa-file-invoice-dollar"\cf2 ></\cf5 i\cf2 >\cf4  Resultados del c\'e1lculo\cf2 </\cf5 h3\cf2 >\cf4 \
+                    \
+                    \cf2 <\cf5 div \cf6 id\cf2 =\cf7 "resultsPlaceholder"\cf2 >\cf4 \
+                        \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "text-center"\cf5  \cf6 style\cf2 =\cf7 "padding: 60px 20px; color: var(--gray);"\cf2 >\cf4 \
+                            \cf2 <\cf5 i \cf6 class\cf2 =\cf7 "fas fa-calculator"\cf5  \cf6 style\cf2 =\cf7 "font-size: 3rem; margin-bottom: 20px; opacity: 0.5;"\cf2 ></\cf5 i\cf2 >\cf4 \
+                            \cf2 <\cf5 h3 \cf6 style\cf2 =\cf7 "margin-bottom: 10px;"\cf2 >\cf4 Introduce los datos del env\'edo\cf2 </\cf5 h3\cf2 >\cf4 \
+                            \cf2 <\cf5 p\cf2 >\cf4 Completa todos los campos del formulario y haz clic en "Calcular costo de env\'edo" para ver los resultados.\cf2 </\cf5 p\cf2 >\cf4 \
+                        \cf2 </\cf5 div\cf2 >\cf4 \
+                    \cf2 </\cf5 div\cf2 >\cf4 \
+                    \
+                    \cf2 <\cf5 div \cf6 id\cf2 =\cf7 "resultsDisplay"\cf5  \cf6 class\cf2 =\cf7 "results-display hidden"\cf2 >\cf4 \
+                        \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "result-item"\cf2 >\cf4 \
+                            \cf2 <\cf5 span \cf6 class\cf2 =\cf7 "result-label"\cf2 >\cf4 N\'famero de bultos:\cf2 </\cf5 span\cf2 >\cf4 \
+                            \cf2 <\cf5 span \cf6 class\cf2 =\cf7 "result-value"\cf5  \cf6 id\cf2 =\cf7 "resultParcels"\cf2 >\cf4 1\cf2 </\cf5 span\cf2 >\cf4 \
+                        \cf2 </\cf5 div\cf2 >\cf4 \
+                        \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "result-item"\cf2 >\cf4 \
+                            \cf2 <\cf5 span \cf6 class\cf2 =\cf7 "result-label"\cf2 >\cf4 Dimensiones totales:\cf2 </\cf5 span\cf2 >\cf4 \
+                            \cf2 <\cf5 span \cf6 class\cf2 =\cf7 "result-value"\cf5  \cf6 id\cf2 =\cf7 "resultDimensions"\cf2 >\cf4 0 \'d7 0 \'d7 0 cm\cf2 </\cf5 span\cf2 >\cf4 \
+                        \cf2 </\cf5 div\cf2 >\cf4 \
+                        \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "result-item"\cf2 >\cf4 \
+                            \cf2 <\cf5 span \cf6 class\cf2 =\cf7 "result-label"\cf2 >\cf4 Peso f\'edsico total:\cf2 </\cf5 span\cf2 >\cf4 \
+                            \cf2 <\cf5 span \cf6 class\cf2 =\cf7 "result-value"\cf5  \cf6 id\cf2 =\cf7 "resultWeight"\cf2 >\cf4 0 kg\cf2 </\cf5 span\cf2 >\cf4 \
+                        \cf2 </\cf5 div\cf2 >\cf4 \
+                        \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "result-item"\cf2 >\cf4 \
+                            \cf2 <\cf5 span \cf6 class\cf2 =\cf7 "result-label"\cf2 >\cf4 Volumen total:\cf2 </\cf5 span\cf2 >\cf4 \
+                            \cf2 <\cf5 span \cf6 class\cf2 =\cf7 "result-value"\cf5  \cf6 id\cf2 =\cf7 "resultVolume"\cf2 >\cf4 0 m\'b3\cf2 </\cf5 span\cf2 >\cf4 \
+                        \cf2 </\cf5 div\cf2 >\cf4 \
+                        \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "result-item"\cf2 >\cf4 \
+                            \cf2 <\cf5 span \cf6 class\cf2 =\cf7 "result-label"\cf2 >\cf4 Peso volum\'e9trico:\cf2 </\cf5 span\cf2 >\cf4 \
+                            \cf2 <\cf5 span \cf6 class\cf2 =\cf7 "result-value volumetric-weight"\cf5  \cf6 id\cf2 =\cf7 "resultVolumetricWeight"\cf2 >\cf4 0 kg\cf2 </\cf5 span\cf2 >\cf4 \
+                        \cf2 </\cf5 div\cf2 >\cf4 \
+                        \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "result-item"\cf5  \cf6 style\cf2 =\cf7 "font-weight: 700; font-size: 1.1rem; padding-top: 20px; border-top: 2px solid var(--primary);"\cf2 >\cf4 \
+                            \cf2 <\cf5 span \cf6 class\cf2 =\cf7 "result-label"\cf2 >\cf4 Peso facturable:\cf2 </\cf5 span\cf2 >\cf4 \
+                            \cf2 <\cf5 span \cf6 class\cf2 =\cf7 "result-value"\cf5  \cf6 id\cf2 =\cf7 "resultBillableWeight"\cf2 >\cf4 0 kg\cf2 </\cf5 span\cf2 >\cf4 \
+                        \cf2 </\cf5 div\cf2 >\cf4 \
+                        \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "result-item"\cf5  \cf6 style\cf2 =\cf7 "font-weight: 700; font-size: 1.1rem; color: var(--primary);"\cf2 >\cf4 \
+                            \cf2 <\cf5 span \cf6 class\cf2 =\cf7 "result-label"\cf2 >\cf4 Ruta de env\'edo:\cf2 </\cf5 span\cf2 >\cf4 \
+                            \cf2 <\cf5 span \cf6 class\cf2 =\cf7 "result-value"\cf5  \cf6 id\cf2 =\cf7 "resultRoute"\cf2 >\cf4 Origen \uc0\u8594  Destino\cf2 </\cf5 span\cf2 >\cf4 \
+                        \cf2 </\cf5 div\cf2 >\cf4 \
+                        \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "result-item"\cf5  \cf6 style\cf2 =\cf7 "font-weight: 700; font-size: 1.3rem; color: var(--success); background-color: rgba(40, 167, 69, 0.1); padding: 20px; border-radius: var(--border-radius); margin-top: 20px;"\cf2 >\cf4 \
+                            \cf2 <\cf5 span \cf6 class\cf2 =\cf7 "result-label"\cf2 >\cf4 Costo estimado:\cf2 </\cf5 span\cf2 >\cf4 \
+                            \cf2 <\cf5 span \cf6 class\cf2 =\cf7 "result-value"\cf5  \cf6 id\cf2 =\cf7 "resultCost"\cf2 >\cf4 \'800.00\cf2 </\cf5 span\cf2 >\cf4 \
+                        \cf2 </\cf5 div\cf2 >\cf4 \
+                        \
+                        \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "volumetric-formula"\cf2 >\cf4 \
+                            F\'f3rmula aplicada: (Alto \'d7 Ancho \'d7 Largo en cm) / 5.988 = Peso volum\'e9trico (kg)\
+                        \cf2 </\cf5 div\cf2 >\cf4 \
+                    \cf2 </\cf5 div\cf2 >\cf4 \
+                    \
+                    \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "important-note"\cf2 >\cf4 \
+                        \cf2 <\cf5 p\cf2 ><\cf5 strong\cf2 >\cf4 Recordatorio:\cf2 </\cf5 strong\cf2 >\cf4  Este c\'e1lculo es una estimaci\'f3n. El costo final puede variar en funci\'f3n de impuestos, seguros adicionales y tarifas espec\'edficas de la ruta seleccionada.\cf2 </\cf5 p\cf2 >\cf4 \
+                    \cf2 </\cf5 div\cf2 >\cf4 \
+                \cf2 </\cf5 section\cf2 >\cf4 \
+            \cf2 </\cf5 div\cf2 >\cf4 \
+        \cf2 </\cf5 section\cf2 >\cf4 \
+\
+        
+\f1\i \cf8 <!-- Services Section -->
+\f0\i0 \cf4 \
+        \cf2 <\cf5 section \cf6 id\cf2 =\cf7 "services"\cf5  \cf6 class\cf2 =\cf7 "services"\cf2 >\cf4 \
+            \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "container"\cf2 >\cf4 \
+                \cf2 <\cf5 h2 \cf6 class\cf2 =\cf7 "section-title"\cf2 >\cf4 Nuestros servicios\cf2 </\cf5 h2\cf2 >\cf4 \
+                \cf2 <\cf5 p \cf6 class\cf2 =\cf7 "text-center mb-30"\cf2 >\cf4 Ofrecemos soluciones de env\'edo adaptadas a todas tus necesidades de transporte de equipaje y enseres.\cf2 </\cf5 p\cf2 >\cf4 \
+                \
+                \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "services-container"\cf2 >\cf4 \
+                    \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "service-card"\cf2 >\cf4 \
+                        \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "service-icon"\cf2 >\cf4 \
+                            \cf2 <\cf5 i \cf6 class\cf2 =\cf7 "fas fa-suitcase"\cf2 ></\cf5 i\cf2 >\cf4 \
+                        \cf2 </\cf5 div\cf2 >\cf4 \
+                        \cf2 <\cf5 h3\cf2 >\cf4 Env\'edo de maletas\cf2 </\cf5 h3\cf2 >\cf4 \
+                        \cf2 <\cf5 p\cf2 >\cf4 Transportamos tu equipaje desde tu domicilio hasta tu destino final, para que viajes sin preocupaciones.\cf2 </\cf5 p\cf2 >\cf4 \
+                    \cf2 </\cf5 div\cf2 >\cf4 \
+                    \
+                    \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "service-card"\cf2 >\cf4 \
+                        \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "service-icon"\cf2 >\cf4 \
+                            \cf2 <\cf5 i \cf6 class\cf2 =\cf7 "fas fa-bicycle"\cf2 ></\cf5 i\cf2 >\cf4 \
+                        \cf2 </\cf5 div\cf2 >\cf4 \
+                        \cf2 <\cf5 h3\cf2 >\cf4 Equipaje deportivo\cf2 </\cf5 h3\cf2 >\cf4 \
+                        \cf2 <\cf5 p\cf2 >\cf4 Env\'edo especializado para bicicletas, tablas de surf, esqu\'edes y otro equipamiento deportivo voluminoso.\cf2 </\cf5 p\cf2 >\cf4 \
+                    \cf2 </\cf5 div\cf2 >\cf4 \
+                    \
+                    \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "service-card"\cf2 >\cf4 \
+                        \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "service-icon"\cf2 >\cf4 \
+                            \cf2 <\cf5 i \cf6 class\cf2 =\cf7 "fas fa-boxes"\cf2 ></\cf5 i\cf2 >\cf4 \
+                        \cf2 </\cf5 div\cf2 >\cf4 \
+                        \cf2 <\cf5 h3\cf2 >\cf4 Mudanzas internacionales\cf2 </\cf5 h3\cf2 >\cf4 \
+                        \cf2 <\cf5 p\cf2 >\cf4 Gestionamos el traslado de tus pertenencias con seguridad y garant\'edas para tu mudanza al extranjero.\cf2 </\cf5 p\cf2 >\cf4 \
+                    \cf2 </\cf5 div\cf2 >\cf4 \
+                    \
+                    \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "service-card"\cf2 >\cf4 \
+                        \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "service-icon"\cf2 >\cf4 \
+                            \cf2 <\cf5 i \cf6 class\cf2 =\cf7 "fas fa-gift"\cf2 ></\cf5 i\cf2 >\cf4 \
+                        \cf2 </\cf5 div\cf2 >\cf4 \
+                        \cf2 <\cf5 h3\cf2 >\cf4 Env\'edo de mercanc\'edas\cf2 </\cf5 h3\cf2 >\cf4 \
+                        \cf2 <\cf5 p\cf2 >\cf4 Transporte seguro de paquetes, regalos y otros enseres tanto a nivel nacional como internacional.\cf2 </\cf5 p\cf2 >\cf4 \
+                    \cf2 </\cf5 div\cf2 >\cf4 \
+                \cf2 </\cf5 div\cf2 >\cf4 \
+            \cf2 </\cf5 div\cf2 >\cf4 \
+        \cf2 </\cf5 section\cf2 >\cf4 \
+\
+        
+\f1\i \cf8 <!-- How It Works Section -->
+\f0\i0 \cf4 \
+        \cf2 <\cf5 section \cf6 id\cf2 =\cf7 "how-it-works"\cf5  \cf6 class\cf2 =\cf7 "instructions"\cf2 >\cf4 \
+            \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "container"\cf2 >\cf4 \
+                \cf2 <\cf5 h2 \cf6 class\cf2 =\cf7 "section-title"\cf2 >\cf4 C\'f3mo funciona\cf2 </\cf5 h2\cf2 >\cf4 \
+                \cf2 <\cf5 p \cf6 class\cf2 =\cf7 "text-center mb-30"\cf2 >\cf4 Solo necesitas seguir estos 4 sencillos pasos para enviar tu equipaje con nosotros.\cf2 </\cf5 p\cf2 >\cf4 \
+                \
+                \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "instructions-list"\cf2 >\cf4 \
+                    \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "instruction-item"\cf2 >\cf4 \
+                        \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "instruction-number"\cf2 >\cf4 1\cf2 </\cf5 div\cf2 >\cf4 \
+                        \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "instruction-content"\cf2 >\cf4 \
+                            \cf2 <\cf5 h3\cf2 >\cf4 Calcula tu env\'edo\cf2 </\cf5 h3\cf2 >\cf4 \
+                            \cf2 <\cf5 p\cf2 >\cf4 Utiliza nuestra calculadora para obtener un presupuesto instant\'e1neo basado en las dimensiones y peso de tu equipaje.\cf2 </\cf5 p\cf2 >\cf4 \
+                        \cf2 </\cf5 div\cf2 >\cf4 \
+                    \cf2 </\cf5 div\cf2 >\cf4 \
+                    \
+                    \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "instruction-item"\cf2 >\cf4 \
+                        \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "instruction-number"\cf2 >\cf4 2\cf2 </\cf5 div\cf2 >\cf4 \
+                        \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "instruction-content"\cf2 >\cf4 \
+                            \cf2 <\cf5 h3\cf2 >\cf4 Programa la recogida\cf2 </\cf5 h3\cf2 >\cf4 \
+                            \cf2 <\cf5 p\cf2 >\cf4 Selecciona la fecha y hora que mejor se adapten a ti para que pasemos a recoger tu equipaje.\cf2 </\cf5 p\cf2 >\cf4 \
+                        \cf2 </\cf5 div\cf2 >\cf4 \
+                    \cf2 </\cf5 div\cf2 >\cf4 \
+                    \
+                    \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "instruction-item"\cf2 >\cf4 \
+                        \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "instruction-number"\cf2 >\cf4 3\cf2 </\cf5 div\cf2 >\cf4 \
+                        \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "instruction-content"\cf2 >\cf4 \
+                            \cf2 <\cf5 h3\cf2 >\cf4 Prepara tu equipaje\cf2 </\cf5 h3\cf2 >\cf4 \
+                            \cf2 <\cf5 p\cf2 >\cf4 Asegura bien tus maletas y etiqu\'e9talas correctamente. Nosotros nos encargamos del resto.\cf2 </\cf5 p\cf2 >\cf4 \
+                        \cf2 </\cf5 div\cf2 >\cf4 \
+                    \cf2 </\cf5 div\cf2 >\cf4 \
+                    \
+                    \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "instruction-item"\cf2 >\cf4 \
+                        \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "instruction-number"\cf2 >\cf4 4\cf2 </\cf5 div\cf2 >\cf4 \
+                        \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "instruction-content"\cf2 >\cf4 \
+                            \cf2 <\cf5 h3\cf2 >\cf4 Recibe en destino\cf2 </\cf5 h3\cf2 >\cf4 \
+                            \cf2 <\cf5 p\cf2 >\cf4 Tu equipaje llegar\'e1 a su destino en el plazo acordado. Puedes seguir el env\'edo en tiempo real.\cf2 </\cf5 p\cf2 >\cf4 \
+                        \cf2 </\cf5 div\cf2 >\cf4 \
+                    \cf2 </\cf5 div\cf2 >\cf4 \
+                \cf2 </\cf5 div\cf2 >\cf4 \
+            \cf2 </\cf5 div\cf2 >\cf4 \
+        \cf2 </\cf5 section\cf2 >\cf4 \
+    \cf2 </\cf5 main\cf2 >\cf4 \
+\
+    
+\f1\i \cf8 <!-- Footer -->
+\f0\i0 \cf4 \
+    \cf2 <\cf5 footer \cf6 id\cf2 =\cf7 "contact"\cf2 >\cf4 \
+        \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "container"\cf2 >\cf4 \
+            \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "footer-content"\cf2 >\cf4 \
+                \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "footer-column"\cf2 >\cf4 \
+                    \cf2 <\cf5 h3\cf2 >\cf4 Viajar sin maletas\cf2 </\cf5 h3\cf2 >\cf4 \
+                    \cf2 <\cf5 p\cf2 >\cf4 Especialistas en el env\'edo de equipaje y otros enseres. Facilitamos tus viajes llevando lo que necesitas donde lo necesitas.\cf2 </\cf5 p\cf2 >\cf4 \
+                    \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "contact-info"\cf2 >\cf4 \
+                        \cf2 <\cf5 i \cf6 class\cf2 =\cf7 "fas fa-phone-alt"\cf2 ></\cf5 i\cf2 >\cf4 \
+                        \cf2 <\cf5 span\cf2 >\cf4 +34 900 123 456\cf2 </\cf5 span\cf2 >\cf4 \
+                    \cf2 </\cf5 div\cf2 >\cf4 \
+                    \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "contact-info"\cf2 >\cf4 \
+                        \cf2 <\cf5 i \cf6 class\cf2 =\cf7 "fas fa-envelope"\cf2 ></\cf5 i\cf2 >\cf4 \
+                        \cf2 <\cf5 span\cf2 >\cf4 info@viajarsinmaletas.com\cf2 </\cf5 span\cf2 >\cf4 \
+                    \cf2 </\cf5 div\cf2 >\cf4 \
+                    \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "contact-info"\cf2 >\cf4 \
+                        \cf2 <\cf5 i \cf6 class\cf2 =\cf7 "fas fa-map-marker-alt"\cf2 ></\cf5 i\cf2 >\cf4 \
+                        \cf2 <\cf5 span\cf2 >\cf4 Calle del Equipaje, 123, 28001 Madrid\cf2 </\cf5 span\cf2 >\cf4 \
+                    \cf2 </\cf5 div\cf2 >\cf4 \
+                    \
+                    \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "social-icons"\cf2 >\cf4 \
+                        \cf2 <\cf5 a \cf6 href\cf2 =\cf7 "#"\cf2 ><\cf5 i \cf6 class\cf2 =\cf7 "fab fa-facebook-f"\cf2 ></\cf5 i\cf2 ></\cf5 a\cf2 >\cf4 \
+                        \cf2 <\cf5 a \cf6 href\cf2 =\cf7 "#"\cf2 ><\cf5 i \cf6 class\cf2 =\cf7 "fab fa-twitter"\cf2 ></\cf5 i\cf2 ></\cf5 a\cf2 >\cf4 \
+                        \cf2 <\cf5 a \cf6 href\cf2 =\cf7 "#"\cf2 ><\cf5 i \cf6 class\cf2 =\cf7 "fab fa-instagram"\cf2 ></\cf5 i\cf2 ></\cf5 a\cf2 >\cf4 \
+                        \cf2 <\cf5 a \cf6 href\cf2 =\cf7 "#"\cf2 ><\cf5 i \cf6 class\cf2 =\cf7 "fab fa-linkedin-in"\cf2 ></\cf5 i\cf2 ></\cf5 a\cf2 >\cf4 \
+                    \cf2 </\cf5 div\cf2 >\cf4 \
+                \cf2 </\cf5 div\cf2 >\cf4 \
+                \
+                \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "footer-column"\cf2 >\cf4 \
+                    \cf2 <\cf5 h3\cf2 >\cf4 Enlaces r\'e1pidos\cf2 </\cf5 h3\cf2 >\cf4 \
+                    \cf2 <\cf5 ul\cf2 >\cf4 \
+                        \cf2 <\cf5 li\cf2 ><\cf5 a \cf6 href\cf2 =\cf7 "#calculator"\cf2 >\cf4 Calculadora de env\'edos\cf2 </\cf5 a\cf2 ></\cf5 li\cf2 >\cf4 \
+                        \cf2 <\cf5 li\cf2 ><\cf5 a \cf6 href\cf2 =\cf7 "#services"\cf2 >\cf4 Servicios\cf2 </\cf5 a\cf2 ></\cf5 li\cf2 >\cf4 \
+                        \cf2 <\cf5 li\cf2 ><\cf5 a \cf6 href\cf2 =\cf7 "#how-it-works"\cf2 >\cf4 C\'f3mo funciona\cf2 </\cf5 a\cf2 ></\cf5 li\cf2 >\cf4 \
+                        \cf2 <\cf5 li\cf2 ><\cf5 a \cf6 href\cf2 =\cf7 "#"\cf2 >\cf4 Tarifas y precios\cf2 </\cf5 a\cf2 ></\cf5 li\cf2 >\cf4 \
+                        \cf2 <\cf5 li\cf2 ><\cf5 a \cf6 href\cf2 =\cf7 "#"\cf2 >\cf4 Cobertura y destinos\cf2 </\cf5 a\cf2 ></\cf5 li\cf2 >\cf4 \
+                        \cf2 <\cf5 li\cf2 ><\cf5 a \cf6 href\cf2 =\cf7 "#"\cf2 >\cf4 Preguntas frecuentes\cf2 </\cf5 a\cf2 ></\cf5 li\cf2 >\cf4 \
+                    \cf2 </\cf5 ul\cf2 >\cf4 \
+                \cf2 </\cf5 div\cf2 >\cf4 \
+                \
+                \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "footer-column"\cf2 >\cf4 \
+                    \cf2 <\cf5 h3\cf2 >\cf4 Nuestros servicios\cf2 </\cf5 h3\cf2 >\cf4 \
+                    \cf2 <\cf5 ul\cf2 >\cf4 \
+                        \cf2 <\cf5 li\cf2 ><\cf5 a \cf6 href\cf2 =\cf7 "#"\cf2 >\cf4 Env\'edo de maletas\cf2 </\cf5 a\cf2 ></\cf5 li\cf2 >\cf4 \
+                        \cf2 <\cf5 li\cf2 ><\cf5 a \cf6 href\cf2 =\cf7 "#"\cf2 >\cf4 Transporte de equipaje deportivo\cf2 </\cf5 a\cf2 ></\cf5 li\cf2 >\cf4 \
+                        \cf2 <\cf5 li\cf2 ><\cf5 a \cf6 href\cf2 =\cf7 "#"\cf2 >\cf4 Mudanzas internacionales\cf2 </\cf5 a\cf2 ></\cf5 li\cf2 >\cf4 \
+                        \cf2 <\cf5 li\cf2 ><\cf5 a \cf6 href\cf2 =\cf7 "#"\cf2 >\cf4 Env\'edo de mercanc\'edas\cf2 </\cf5 a\cf2 ></\cf5 li\cf2 >\cf4 \
+                        \cf2 <\cf5 li\cf2 ><\cf5 a \cf6 href\cf2 =\cf7 "#"\cf2 >\cf4 Seguros de transporte\cf2 </\cf5 a\cf2 ></\cf5 li\cf2 >\cf4 \
+                        \cf2 <\cf5 li\cf2 ><\cf5 a \cf6 href\cf2 =\cf7 "#"\cf2 >\cf4 Seguimiento en tiempo real\cf2 </\cf5 a\cf2 ></\cf5 li\cf2 >\cf4 \
+                    \cf2 </\cf5 ul\cf2 >\cf4 \
+                \cf2 </\cf5 div\cf2 >\cf4 \
+            \cf2 </\cf5 div\cf2 >\cf4 \
+            \
+            \cf2 <\cf5 div \cf6 class\cf2 =\cf7 "copyright"\cf2 >\cf4 \
+                \cf2 &copy;\cf4  2023 Viajar sin maletas. Todos los derechos reservados. | \cf2 <\cf5 a \cf6 href\cf2 =\cf7 "#"\cf5  \cf6 style\cf2 =\cf7 "color: rgba(255,255,255,0.7);"\cf2 >\cf4 Pol\'edtica de privacidad\cf2 </\cf5 a\cf2 >\cf4  | \cf2 <\cf5 a \cf6 href\cf2 =\cf7 "#"\cf5  \cf6 style\cf2 =\cf7 "color: rgba(255,255,255,0.7);"\cf2 >\cf4 T\'e9rminos y condiciones\cf2 </\cf5 a\cf2 >\cf4 \
+            \cf2 </\cf5 div\cf2 >\cf4 \
+        \cf2 </\cf5 div\cf2 >\cf4 \
+    \cf2 </\cf5 footer\cf2 >\cf4 \
+\
+    \cf2 <\cf5 script\cf2 >\cf4 \
+        document.addEventListener('DOMContentLoaded', function() \{\
+            // Mobile menu toggle\
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');\
+            const navMenu = document.getElementById('navMenu');\
+            \
+            mobileMenuBtn.addEventListener('click', function() \{\
+                navMenu.classList.toggle('active');\
+            \});\
+            \
+            // Close mobile menu when clicking a link\
+            const navLinks = document.querySelectorAll('.nav-menu a');\
+            navLinks.forEach(link => \{\
+                link.addEventListener('click', function() \{\
+                    navMenu.classList.remove('active');\
+                \});\
+            \});\
+            \
+            // Calculator functionality\
+            const calculateBtn = document.getElementById('calculateBtn');\
+            const resultsPlaceholder = document.getElementById('resultsPlaceholder');\
+            const resultsDisplay = document.getElementById('resultsDisplay');\
+            \
+            // Relaci\'f3n: 1 m\'b3 = 167 kg, por lo tanto 1 kg volum\'e9trico = 1/167 m\'b3 = 0.005988 m\'b3\
+            // O lo que es lo mismo: Peso volum\'e9trico (kg) = volumen (m\'b3) * 167\
+            // Volumen en m\'b3 = (alto * ancho * largo en cm) / 1,000,000\
+            \
+            calculateBtn.addEventListener('click', function() \{\
+                // Obtener valores del formulario\
+                const parcels = parseInt(document.getElementById('parcels').value) || 1;\
+                const height = parseFloat(document.getElementById('height').value) || 0;\
+                const width = parseFloat(document.getElementById('width').value) || 0;\
+                const length = parseFloat(document.getElementById('length').value) || 0;\
+                const weight = parseFloat(document.getElementById('weight').value) || 0;\
+                const origin = document.getElementById('origin').value;\
+                const destination = document.getElementById('destination').value;\
+                \
+                // Validar campos obligatorios\
+                if (!height || !width || !length || !weight || !origin || !destination) \{\
+                    alert('Por favor, complete todos los campos obligatorios.');\
+                    return;\
+                \}\
+                \
+                if (origin === destination) \{\
+                    alert('El origen y el destino no pueden ser el mismo lugar.');\
+                    return;\
+                \}\
+                \
+                // Calcular volumen en m\'b3\
+                const volumeCm3 = height * width * length * parcels;\
+                const volumeM3 = volumeCm3 / 1000000;\
+                \
+                // Calcular peso volum\'e9trico (1 m\'b3 = 167 kg)\
+                const volumetricWeight = volumeM3 * 167;\
+                \
+                // Peso f\'edsico total\
+                const totalWeight = weight * parcels;\
+                \
+                // Peso facturable (el mayor entre peso f\'edsico y volum\'e9trico)\
+                const bill}
